@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="px-12 text-gray-400 bg-gray-900">
+    <div class="pb-6 sm:pb-8 lg:pb-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+            <header class="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-6">
+                <!-- logo - start -->
+                <a href="/" class="inline-flex items-center gap-2.5 text-2xl font-bold text-white md:text-3xl"
+                    aria-label="logo">
+                    ADAS
+                </a>
+                <!-- logo - end -->
+
+                <nav class="flex items-center py-4 overflow-x-auto whitespace-nowrap">
+                    <a href="#home-section" class="text-gray-600 dark:text-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                        </svg>
+                    </a>
+                    <span class="mx-5 text-gray-500 dark:text-gray-300">/</span>
+                    <a href="#working-section" class="text-lg font-semibold transition duration-100 hover:text-indigo-500 active:text-indigo-700">Working</a>
+                    <span class="mx-5 text-gray-500 dark:text-gray-300">/</span>
+                    <a href="#main-component-section" class="text-lg font-semibold transition duration-100 hover:text-indigo-500 active:text-indigo-700">Main Component</a>
+                    <span class="mx-5 text-gray-500 dark:text-gray-300">/</span>
+                    <a href="#about-section" class="text-lg font-semibold transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
+                </nav>
+                
+                
+
+                <!-- nav - end -->
+
+                <!-- buttons - start -->
+                <a href="https://ijarcce.com/papers/obstacle-detection-and-avoidance-in-autonomous-cars/"
+                    class="hidden rounded-lg bg-gray-100 px-8 py-3 text-center text-sm font-semibold text-gray-700 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Review
+                    paper</a>
+
+                <button type="button"
+                    class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    Menu
+                </button>
+                <!-- buttons - end -->
+            </header>
+
+            <section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+                <!-- content - start -->
+                <div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
+                    <p class="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">Welcome To The World Of
+                        AI..</p>
+
+                    <h1 class="mb-8 text-4xl font-bold text-white sm:text-5xl md:mb-12 md:text-6xl">Advance Driving
+                        Assistance System</h1>
+                    <p class="mb-8 leading-relaxed md:mb-12 lg:w-4/5 xl:text-lg"> An ML model design for Advanced Driver
+                        Assistance Systems (ADAS)
+                        acts like a smart co-pilot in your car, using data to help with tasks like
+                        lane-keeping,collision warnings,
+                        and adaptive cruise control, making your drive safer and smoother.</p>
+
+
+                </div>
+                <!-- content - end -->
+
+                <!-- image - start -->
+                <div class="h-48 overflow-hidden rounded-lg bg-black-100 shadow-lg lg:h-auto xl:w-5/12">
+                    <img src="./demo.jpg"
+                        loading="lazy" alt="#"
+                        class="h-auto w-100 object-cover object-center" />
+                </div>
+                <!-- image - end -->
+            </section>
+        </div>
+    </div>
+
+    <section id="working-section" class="body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-2xl text-1xl font-medium title-font text-white">Strcture of System
+                </h1>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-white text-lg title-font font-medium">YOLO</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base"> "You Only Look Once"
+                                It is a popular object detection algorithm in computer vision. It processes the entire
+                                image in one go, predicting bounding boxes and class probabilities for multiple objects
+                                simultaneously, making it efficient for real-time applications like image and video
+                                processing.</p>
+                            <a class="mt-3 text-indigo-400 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <h2 class="text-white text-lg title-font font-medium">Obstacle Detection</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">Obstacle detection in Advanced Driver Assistance
+                                Systems (ADAS) involves using sensors like cameras and radar to identify and assess
+                                potential obstacles in the vehicle's path. This crucial feature enhances safety by
+                                providing timely warnings or triggering automated actions to avoid collisions.
+                            </p>
+                            <a class="mt-3 text-indigo-400 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-800 bg-opacity-60 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <circle cx="6" cy="6" r="3"></circle>
+                                    <circle cx="6" cy="18" r="3"></circle>
+                                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-white text-lg title-font font-medium">Need of ADAS</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">An ADAS (Advanced Driver Assistance System) is
+                                essential for enhancing road safety and reducing accidents. These systems leverage
+                                technology to assist drivers in various ways, such as collision avoidance, lane-keeping,
+                                and adaptive cruise control. By providing real-time feedback and assistance, ADAS helps
+                                mitigate human errors, improves overall driving experience, and contributes to a safer
+                                and more efficient transportation ecosystem.
+                            </p>
+                            <a class="mt-3 text-indigo-400 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./1.jpg" alt="blog">
+                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Sign Detection</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+                      <p class="leading-relaxed mb-3">Our ML model utilizes the YOLO (You Only Look Once) algorithm to detect traffic lights by analyzing real-time video feeds. It identifies the unique patterns and colors associated with traffic signals, enabling precise recognition and timely response to changes in their status.</p>
+                      <div class="flex items-center flex-wrap ">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./2.jpg" alt="blog">
+                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Crossing Detection</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+                      <p class="leading-relaxed mb-3"> Leveraging advanced deep learning techniques, our model detects pedestrian crossings by analyzing spatial relationships and motion patterns within the scene. By identifying specific geometric configurations and pedestrian movement cues, it accurately locates and categorizes crossing areas to enhance driver awareness and safety.</p>
+                      <div class="flex items-center flex-wrap">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="./3.jpg" alt="blog">
+                    <div class="p-6">
+                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Traffic Light Detection</h2>
+                      <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                      <p class="leading-relaxed mb-3">Our ML model utilizes the YOLO (You Only Look Once) algorithm to detect traffic lights by analyzing real-time video feeds. It identifies the unique patterns and colors associated with traffic signals, enabling precise recognition and timely response to changes in their status.</p>
+                      <div class="flex items-center flex-wrap ">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+    <section id="main-component-section" class="body-font">
+        <div class="py-6 sm:py-8 lg:py-12">
+            <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+                <div
+                    class="flex flex-col flex justify-center items-center items-center justify-between gap-4 rounded-lg bg-gray-800 p-4 sm:flex-row md:p-8">
+                    <div class="text-center w-full">
+                        <h2 class="text-center font-bold text-indigo-500 md:text-2xl">Start trial</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="z-10 top-0 w-full h-full flex bg-#1F2544 bg-opacity-60">
+            <div class="extraOutline p-4 bg-white w-max bg-whtie m-auto rounded-lg">
+                <div class="file_upload p-5 relative border-4 border-dotted border-gray-300 rounded-lg"
+                    style="width: 450px">
+                    <svg class="text-indigo-500 w-24 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    <div class="input_field flex flex-col w-max mx-auto text-center">
+                        <label>
+                            <input class="text-sm cursor-pointer w-36 hidden" type="file" multiple />
+                            <div
+                                class="text bg-indigo-600 text-white border border-gray-300 rounded font-semibold cursor-pointer p-1 px-3 hover:bg-indigo-500">
+                                DROP</div>
+                        </label>
+
+                        <div class="title text-indigo-500 uppercase">Upload files
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <div class="border-t py-8 text-center text-sm text-gray-400"></div>
+
+    <footer class="bg-gray-900 text-gray-400">
+        <section id="about-section" class="=body-font">
+            <div class="pt-12 lg:pt-16">
+                <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+
+                    <div class="col-span-full lg:col-span-2 mb-12">
+                        <!-- logo - start -->
+                        <div class="mb-4 lg:-mt-2 text-center">
+                            <a href="/" class="inline-flex items-center gap-1 text-xl font-bold text-white md:text-2xl"
+                                aria-label="logo">
+                                ABOUT
+                            </a>
+                        </div>
+                        <!-- logo - end -->
+
+                        <p class="mb-6 text-gray-500 sm:pr-8">In the intricate symphony of safety and innovation that defines the modern automotive landscape, our Advanced Driver Assistance Systems (ADAS) ML model emerges as the virtuoso, orchestrating a seamless harmony on the road. Like a master conductor, it directs an ensemble of cutting-edge technology to enrich the driving experience while ensuring the utmost protection for all travelers. Nurtured by the latest advancements in machine learning and artificial intelligence, our ADAS model not only enhances the journey but also conducts a beautiful symphony of safety, weaving a tapestry of security and sophistication on every mile of the road.
+                        At the heart of our technology lies a commitment to redefine the rhythm of the road. Through meticulous training and refinement, our ADAS system anticipates and responds to potential hazards with unparalleled precision, transforming the driving experience into a safer, smoother, and more enjoyable journey for all. With features designed to enhance situational awareness, mitigate risks, and empower drivers, our system represents a groundbreaking fusion of innovation and security.    
+                        Welcome to our website, where security and sophistication dance hand in hand, inviting you to explore a world where technology and safety converge to shape the future of transportation. Join us on this journey as we continue to push the boundaries of possibility, setting new standards for excellence in automotive safety and performance.
+                        </p>
+
+                        <!-- social - start -->
+
+                        <!-- social - end -->
+                    </div>
+
+                    <div class="border-t py-8 text-center text-center text-gray-400"></div>
+
+                    <div class="mb-16 grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6 lg:gap-8">
+                        <!-- nav - start -->
+                        <div>
+                            <div class="mb-4 font-bold uppercase tracking-widest text-gray-200">Aniket A. Vadar</div>
+
+                            <div class="flex gap-2">
+
+                                <a href="https://linkedin.com/in/aniket-vadar/" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/Aniket-Vadar" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- nav - start -->
+                        <div>
+                            <div class="mb-4 font-bold uppercase tracking-widest text-gray-200">Zahir I. Mulla</div>
+                            <div class="flex gap-2">
+
+                                <a href="https://www.linkedin.com/in/zahir-mulla-99688b258/" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+                                <br>
+                                <a href="https://github.com/zahirm86" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!-- nav - end -->
+
+                        <!-- nav - start -->
+                        <div>
+                            <div class="mb-4 font-bold uppercase tracking-widest text-gray-200">Aditya S. Rakate</div>
+                            <div class="flex gap-2">
+
+                                <a href="https://www.linkedin.com/mwlite/in/aditya-rakate-6140b8260" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+                                <br>
+                                <a href="https://github.com/AdityaRDX" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!-- nav - end -->
+
+                        <!-- nav - start -->
+                        <div>
+                            <div class="mb-4 font-bold uppercase tracking-widest text-gray-200">Sarthak P. Samgir</div>
+                            <div class="flex gap-2">
+
+                                <a href="https://www.linkedin.com/in/sarthak-samgir-457946251" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+                                <br>
+                                <a href="https://github.com/Sarthastic" target="_blank"
+                                    class="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600">
+                                    <svg class="h-5 w-5" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!-- nav - end -->
+                    </div>
+                    <!-- nav - end -->
+
+                </div>
+
+            </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
