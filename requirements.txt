@@ -1,0 +1,9 @@
+ Flask 
+werkzeug.utils 
+ cv2
+ ultralytics  
+ numpy 
+ os
+ torch
+ tensorflow
+ time
